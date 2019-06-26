@@ -84,7 +84,7 @@ router.put("/:id", restricted, (req, res) => {
   const { id } = req.params;
   const changes = req.body;
 
-  if (!changes.item_name) {
+  if (!changes.couple_name) {
     res.status(400).json({
       error: "Please provide a name for the post."
     });
